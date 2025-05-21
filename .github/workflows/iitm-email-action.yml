@@ -1,0 +1,16 @@
+name: IITM Action Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: 23f3003642@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
